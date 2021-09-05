@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+api.openweathermap.org/data/2.5/weather?q=bangalore&appid=a66a6202d1758026935ce1f8023dc14f

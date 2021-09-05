@@ -8,7 +8,7 @@ const Weather = () => {
 
   const getWeatherInfo = async () => {
     try {
-      let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=e0e2b2a20f286155def23fcfbdc2169a`;
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=a66a6202d1758026935ce1f8023dc14f`;
 
       let res = await fetch(url);
       let data = await res.json();
@@ -38,14 +38,14 @@ const Weather = () => {
 
   useEffect(() => {
     getWeatherInfo();
-  }, []);
+  });
 
   return (
     <>
     <div className="Wrapper">
       <div className="wrap">      
         <div className="search">
-          <input
+          <input 
             type="search"
             placeholder="search..."
             autoFocus
