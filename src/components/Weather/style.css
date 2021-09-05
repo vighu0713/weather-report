@@ -153,14 +153,22 @@ width: 70vw;
 }
 
 .searchTerm {
-  width: 50%;
+  width: 100%;
   /* border: 3px solid #00b4cc; */
   border: none;
   padding: 16px;
   height: 20px;
-  border-radius: 5px 0 0 5px;
+  /* border-radius: 5px 0 0 5px; */
+  border-radius: 10px;
   outline: none;
   font-size: 18px;
+}
+h2{
+    color: white;
+  font-size: 20px;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 15px;
 }
 
 .searchTerm:focus {
@@ -179,6 +187,7 @@ width: 70vw;
   font-size: 20px;
   outline: none;
   font-size: 16px;
+  display: none;
 }
 
 .searchButton:hover {
@@ -191,6 +200,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
+flex-direction: column;
 }
 
 /*Resize the wrap to see the search bar change!*/

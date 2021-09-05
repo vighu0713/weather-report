@@ -38,12 +38,14 @@ const Weather = () => {
 
   useEffect(() => {
     getWeatherInfo();
-  },[]);
+  });
 
   return (
     <>
     <div className="Wrapper">
       <div className="wrap">      
+    <h2>Search Your City Here</h2>
+
         <div className="search">
           <input 
             type="search"
